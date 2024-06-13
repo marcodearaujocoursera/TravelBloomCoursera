@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Travel Bloom Coursera</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="travel_recommendation.js"></script>
+    </head>
+    <body>
+        <nav style="background-color:black">
+            <ul class="navBar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li style="float:right; padding:14px 16px 0 0;"><button onclick="resetSearch()">Reset</button></li>
+                <li style="float:right; padding:14px 0;"><button onclick="doSearch()">Search</button></li>
+                <li style="float:right; padding:14px 0;"><input id="search" type="text" placeholder="Enter a destination or keyword"></li>
+            </ul>
+        </nav>
+        <div class="grid-container">
+            <div class="main">
+                <section id="home">
+                    <div class="introduction">
+                        <p class="introductionHeadLine">EXPLORE DREAM DESTINATION</p>
+                        <p style="font-size: 25px">Embark on a journey of discovery with us as we invite you to explore the world's most captivating destinations. At Wanderlust Journeys, we believe that travel is not just about reaching a destination; it's about immersing yourself in unforgettable experiences, creating cherished memories, and broadening your horizons.</p>
+                    </div>
+                </section>
+                <section id="about-us">
+                    <div class="introduction">
+                        <p class="introductionHeadLine">ABOUT US</p>
+                        <p style="font-size: 25px">Welcome to Travel Bloom Coursera, where your journey begins beyond the ordinary. Born out of a collective love for exploration and discovery, we are more than just a travel website; we are your trusted companion in crafting unforgettable experiences around the globe. Our mission is simple: to ignite the spark of adventure within every traveler and unlock the beauty of the world one destination at a time. With a carefully curated selection of destinations, personalized itineraries, and expert travel tips, we empower you to wander with purpose and immerse yourself in the wonders of our planet. Join us as we redefine the art of travel and embark on a voyage of endless possibilities.</p>
+                        <div>
+                            <ul class="ourTeam">
+                                <li style="font-size:40px; padding-top:50px;">Our Team</li>
+                                <li>
+                                    <ul class="card">
+                                        <li>Joe Doe</li>
+                                        <li>Joe is responsible...</li>
+                                        <li class="role">CEO</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="card">
+                                        <li>Celina Thomas</li>
+                                        <li>Joe is responsible...</li>
+                                        <li class="role">Team Lead</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="card">
+                                        <li>Mike Bison</li>
+                                        <li>Joe is responsible...</li>
+                                        <li class="role">Delivery Head</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact-us">
+                    <div class="introduction">
+                        <p class="introductionHeadLine">CONTACT US</p>
+                        <form>
+                            <label for="fname">Name:</label><br />
+                            <input type="text" id="fname"><br />
+                            <label for="femail">Email:</label><br />
+                            <input type="text" id="femail"><br />
+                            <label for="fmsg">Message:</label><br />
+                            <textarea id="fmsg" rows="4" cols="50"></textarea><br />
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="right">
+                <div id="results"></div>
+            </div>
+        </div>
+    </body>
+</html>
